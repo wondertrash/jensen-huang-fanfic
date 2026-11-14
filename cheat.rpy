@@ -23,7 +23,7 @@ label start:
             $ has_flashdrive = True
             play sound "item_pickup.wav"
             show alex happy at left
-            a "Good work. I knew I could count on you."
+            a "Good work. I knew I could count on you."x
 
         "Lie and say you lost it.":
             $ trust -= 1
