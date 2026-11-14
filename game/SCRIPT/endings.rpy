@@ -1,5 +1,5 @@
 label talk_to_lisa:
-    #"Talk to Lisa"
+    "(This action will have consequences.)"
 
     jh "Hey ladies, can I talk to Lisa one-on-one for now?"
 
@@ -12,6 +12,9 @@ label talk_to_lisa:
     lh "Take your hands off me, you Chinese spy!"
 
     "Alice drags Lori out of the room."
+
+    hide alice
+    hide lori
 
     jh "So, how are ur company doing, lisa?"
 
@@ -59,10 +62,10 @@ label talk_to_lisa:
 
     ls "So..., are we getting back to where we left off?"
 
+    call end_scene
     return
 
 label talk_to_lori:
-    #"Talk to Lori"
 
     jh "Hey ladies, can I talk to my wife, er, ex-wife in a one-on-one conversation?"
 
@@ -70,9 +73,13 @@ label talk_to_lori:
 
     "Lisa exits the room."
 
+    hide lisa
+
     ah "Alright, but don't forget about those GPU blueprints as promised!"
 
     "Alice gives you a wink on her way out."
+
+    hide alice
 
     jh "I'm sorry, Lori."
 
@@ -104,7 +111,7 @@ label talk_to_lori:
 
     lh "I'm gonna miss you, Jensen. I wish you the best of luck for whatever path you choose from this point onward."
 
-    "You walk away, waving goodbye to your wife of 40 years."
+    "You walk away, waving goodbye to your former wife of 40 years."
 
     scene nvidia hq at fullscreen_cover with fade
 
@@ -112,10 +119,10 @@ label talk_to_lori:
 
     "You managed to reclaim your position as CEO of Nvidia with the help of your loyal workers."
 
+    call end_scene
     return
 
 label talk_to_alice:
-    #"Talk to Alice"
 
     jh "Hey ladies, can I talk to Alice in a one-on-one?"
 
@@ -124,6 +131,9 @@ label talk_to_alice:
     ls "C'mon Lori, we should let him clear things up with her."
 
     "Lisa drags a reluctant Lori out of the room."
+
+    hide lisa
+    hide lori
 
     ah "So, about those GPU blueprints..."
 
@@ -134,6 +144,7 @@ label talk_to_alice:
         "Don't hand blueprints over":
             call hand_over_blueprints_false 
 
+    call end_scene
     return
 
 label hand_over_blueprints_true:
@@ -166,6 +177,8 @@ label hand_over_blueprints_false:
     jh "Wait, wait please-"
 
     "Alice pulls the trigger."
+
+    call end_scene
     return
 
 label moonshot_ai_accept:
@@ -178,8 +191,16 @@ label moonshot_ai_accept:
     "You are the new CEO of Moonshot AI."
     
     "You are tight with Xi Jinping, while your relationship with Donald Trump has deteriorated."
+    
+    call end_scene
     return
 
 label moonshot_ai_decline:
     call hand_over_blueprints_false
+    return
+
+label end_scene:
+    "The End!"
+    
+    "Thank You for Playing!"
     return

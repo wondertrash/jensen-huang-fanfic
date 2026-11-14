@@ -22,8 +22,11 @@ label beginning:
 
     jh "(Drinks red potion)"
 
-    "You fall unconscious and drops to the floor." 
+    "You fall unconscious and drops to the floor."
+
     "The suspicious drug dealer quickly flees the scene."
+
+    hide dd
 
     scene hospital at fullscreen_cover with fade
 
@@ -53,9 +56,9 @@ label beginning:
 
     ls "I'm sorry, Jensen, but did you actually give up top-secret blueprints for..."
 
-    jh "(I should change the subject before the three of them kill me. Figuratively, of course. )"
+    jh "(I should change the subject before the three of them kill me. Figuratively, of course.)"
 
-    "Talk to Lisa, Lori, or Alice? (This action will have consequences.)"
+    "Talk to Lisa, Lori, or Alice?"
 
     menu:
         "Talk to Lisa":
