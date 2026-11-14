@@ -1,10 +1,35 @@
+# [ SHOW CALLBACK ]
+
+transform active_speaker:
+    ease 0.2 matrixcolor BrightnessMatrix(0.0) zoom 1.02
+
+transform dim_speaker:
+    ease 0.2 matrixcolor BrightnessMatrix(-0.25) zoom 1.00
+
+init python:
+    characters = ["jensen", "lisa", "alice", "lori", "dd"]
+
+    def speak_callback(event, interact=True, **kwargs):
+        if event == "begin" and interact:
+            speaker = renpy.get_say_image_tag()
+
+            if speaker and not renpy.showing(speaker):
+                renpy.show(speaker, at_list=[center], with_list=[dissolve])
+
+            for tag in characters:
+                if renpy.showing(tag):
+                    if tag == speaker:
+                        renpy.show(tag, at_list[active_speaker], zorder=10)
+                    else:
+                        renpy.show(tag, at_list[dim_speaker], zorder=1)
+
 # [ CHARACTERS ]
 
-define jh = Character("Jensen Hoang", color="#52B788", image="jensen")
-define ls = Character("Lisa Su", color="#FF9F1C", image="lisa")
-define ah = Character("Alice Hoang", color="#FF595E", image="alice")
-define lh = Character("Lori Hoang", color="#4CC9F0", image="lori")
-define dd = Character("Drug Dealer", color="#AAAAAA", image="dd")
+define jh = Character("Jensen Huang", color="#52B788", image="jensen", callback=speak_callback)
+define ls = Character("Lisa Su", color="#FF9F1C", image="lisa", callback=speak_callback)
+define ah = Character("Alice Huang", color="#FF595E", image="alice", callback=speak_callback)
+define lh = Character("Lori Huang", color="#4CC9F0", image="lori", callback=speak_callback)
+define dd = Character("Drug Dealer", color="#AAAAAA", image="dd", callback=speak_callback)
 
 # [ POSITIONS ]
 
