@@ -29,9 +29,7 @@ label beginning:
 
     "You wakes up in a delirious state."
 
-    ls "Hey Jensen, I'm really sorry for making that Twitter post earlier."
-
-    ls "I know your mental state is in the gutter, so I'll take care of you for the forseeable future."
+    ls "Hey Jensen, I know you're going through a rough time right now, so I'll take care of you for the forseeable future."
 
     jh "How long was I out?"
 
