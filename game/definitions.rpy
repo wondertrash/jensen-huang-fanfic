@@ -4,7 +4,7 @@ define jh = Character("Jensen Hoang", color="#52B788", image="jensen")
 define ls = Character("Lisa Su", color="#FF9F1C", image="lisa")
 define ah = Character("Alice Hoang", color="#FF595E", image="alice")
 define lh = Character("Lori Hoang", color="#4CC9F0", image="lori")
-define dd = Character("Drug Dealer", color="#000000", image="dd")
+define dd = Character("Drug Dealer", color="#AAAAAA", image="dd")
 
 # [ POSITIONS ]
 
