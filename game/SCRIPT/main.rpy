@@ -1,170 +1,230 @@
 label beginning:
-    scene bg dark alley
+    scene dark alley at fullscreen_cover with fade
+    show jh at center with dissolve
 
-    "jensen huang has just been divorced by his wife and kicked out of his mansion and stripped of his ceo position at nvidia and half his money after affair w/ alice huang"
+    "You have recently been divorced by your wife and kicked out of your mansion."
 
-    "jensen huang wanders in dark alley, ashamed of his actions"
+    "Your CEO position at Nvidia has been stripped away."
 
-    dd "hey man, u look down. take this if u wanna relax (hands over suspicious red potion)"
+    "You lost half your money after your cheating on your faithful wife with Alice Huang."
 
-    jh "what is this?"
+    "You wander in a dark alley, ashamed of your actions."
 
-    dd "ive been working on this, i think it could turn ur life around, for better or for worse"
+    dd "Hey man, you look down. Take this and relax, free of charge."
 
-    jh "well i just got divorced and lost half my assets, as well as my position as ceo, so it cant get worse than this"
+    dd "(Hands you a suspicious red potion)"
 
-    "(drinks red potion)"
+    jh "Um... what is this?"
 
-    "jensen huang faints, drug dealer leaves the scene"
+    dd "Just a little experiment I've been working on. Safe to say, it will turn ur life around, for better or for worse."
 
-    scene bg hospital
+    jh "Well, my life can't get much worse..."
 
-    "jensen wakes up, delirious"
+    jh "(Drinks red potion)"
 
-    ls "hey jensen, im so sorry for that post. i know ur in a very poor mental state, so ill take care of u for the forseeable future"
+    "You fall unconscious and drops to the floor." 
+    "The suspicious drug dealer quickly flees the scene."
 
-    "jensen admires the woman in front of her"
+    scene hospital at fullscreen_cover with fade
 
-    jh "how long was i out?"
+    "You wakes up in a delirious state."
 
-    ls "around half a day, i saw u lying on the ground and immediate dialed the emergency hotline"
+    ls "Hey Jensen, I'm really sorry for making that Twitter post earlier."
 
+    ls "I know your mental state is in the gutter, so I'll take care of you for the forseeable future."
 
-    "lori huang barges in"
+    jh "How long was I out?"
 
-    lh "jensen! i leave u alone for one day and this is what i back to?? hmph!"
+    ls "For about half a day. I saw you lying on the ground in a dark alley, so I immediately dialed the emergency hotline."
 
-    "alice huang enters the room"
+    jh "I see. Thank y-"
 
+    "Your ex-wife barges in the room."
 
-    "talk to lisa, lori, or alice? (this action will have consequences)"
+    lh "JENSEN! I leave you alone for a SINGLE day and I come back to my ex-husband half-dead??"
 
-    "talk to lisa"
+    jh "Wow, you still care so much about me? :)"
 
-    jh "hey, can i talk to lisa one-on-one for now?"
+    lh "Erm, well... i-it's not like I still like you or anything! Hmph!"
 
+    "Alice Huang enters the room."
 
-    ah "alright jensen, but dont forget about those gpu designs~"
+    lh "What on Earth is the Chinese spy doing here?!"
 
-    "alice drags lori out of the room"
+    ah "I'm here to collect Jensen's promised GPU designs."
 
-    jh "so... how are ur company doing, lisa?"
+    ls "I'm sorry, Jensen, but did you actually give up top-secret blueprints for..."
 
-    ls "oh... its doing fine, i suppose. here, ur face is still a little dirty, let me wipe that... ahh!"
+    jh "(I should change the subject before the three of them kill me. Figuratively, of course. )"
 
-    "lisa faceplants onto jensens tummy wummy"
+    #"Talk to Lisa, Lori, or Alice? (This action will have consequences.)"
 
-    ls "woah, ur abs are so... prominent (blushes)"
+    #"Talk to Lisa"
 
-    jh "if u want more of this, u should hire me as amd's vice president"
+    jh "Hey ladies, can I talk to Lisa one-on-one for now?"
 
-    ls "w-what?? u as vp? but the board..."
+    lh "YOU JUST FAINTED AND THE FIRST PERSON U WANT TO TALK TO IS YOUR COUSIN AND MAIN COMPETITOR!?"
 
-    "jensen: its ok, i still have supporters who would support such a decision. besides... ive always admired u, lisa"
+    ah "Alright Jensen, but don't you dare forget to send those GPU blueprints~"
 
+    lh "!!"
 
-    "jensen wraps his cool leather jacket around lisa"
+    lh "Take your hands off me, you Chinese spy!"
 
-    ls "w-what is this?"
+    "Alice drags Lori out of the room."
 
-    jh "lisa... i want to be with u. ive liked u ever since i found out we were related."
+    jh "So, how are ur company doing, lisa?"
 
+    ls "Oh... it's doing fine, I suppose. Is that all you wanted to ask?"
+    
+    jh "No, there was something else..."
 
-    jh "no one will find out about this. ive learned from my mistakes, i promise."
+    ls "Wait, your face is still a little dirty. Let me wipe that... ahh!"
 
-    ls "alright, i trust u"
+    "Lisa trips on nothing and faceplants onto your tummy wummy."
 
-    "jensen leans in for a kiss, lisa complies"
+    ls "Woah, your abs are so... prominent. (blushes)"
 
-    "(time skip)"
-    scene bg amd hq
+    jh "If you want more of this, you should hire me as AMD's vice president."
 
-    jh "ahh, it feels good to make boatloads of money again!"
+    ls "W-what?? You as vice president? But the Board..."
 
-    ls "so, are we getting back to where we left off?"
+    jh "It's okay, I have supporters in your company who would vote for such a decision."
 
-    "(jensen and lisa resume freaky time)"
+    jh "Besides... I've always admired you, Lisa."
 
-    "ending 1"
+    lh "...Same, Jensen."
 
-    "talk to lori"
+    lh "You know, I've always been jealous of Nvidia's technological advancements in ray tracing and machine learning."
 
-    jh "hey, can i talk to my wife, er, ex-wife one on one?"
+    lh "I know my company will profit from your affair, but still-"
 
-    ls "sure. make sure u get well soon."
+    "You wrap your cool leather jacket around Lisa."
 
-    ah "sure, but dont forget about those gpu blueprints as promised (wink)"
+    ls "W-what is this?"
 
-    "lisa and alice leave the room"
+    jh "Lisa... I want to be with you. I've liked you ever since I found out we were related."
 
-    jh "im sorry."
+    jh "No one will find out about this. I've learned from my past mistakes, i swear."
 
+    ls "Alright, I trust you."
 
-    jh "it was 3 actually..."
+    "You lean in for a kiss. Lisa does as well."
 
-    lh "what was that?"
+    scene amd hq at fullscreen_cover with fade
 
-    jh "nothing! anyways, im rlly do regret my actions, so even if u dont love me anymore, i hope we can, at the very least, part on good terms"
+    "(Time Skip)"
 
+    jh "Ahh, it feels so good to make boatloads of money again!"
 
-    "jensen: (nod) i respect ur decision. thanks, lori."
+    ls "So..., are we getting back to where we left off?"
 
-    "lori tears up and cries"
+    #"Ending 1"
 
-    lh "im gonna miss u, jensen. i wish u the best of luck for whatever path u choose from this point onward"
+    #"Talk to Lori"
 
-    "jensen walks away and waves goodbye"
+    jh "Hey ladies, can I talk to my wife, er, ex-wife in a one-on-one conversation?"
 
-    scene bg nvidia hq
+    ls "Of course. Make sure you get well soon."
 
-    "jensen managed to reclaim his position as ceo of nvidia with the help of his loyal workers"
+    "Lisa exits the room."
 
-    "ending 2"
+    ah "Alright, but don't forget about those GPU blueprints as promised!"
 
-    "talk to alice"
+    "Alice gives you a wink on her way out."
 
-    jh "hey, can i talk to alice one on one?"
+    jh "I'm sorry, Lori."
 
+    lh "You oughtta be! Do you know how sad I was knowing that MY HUSBAND OF 40 YEARS CHEATED ON ME WITH 2 OTHER WOMEN??"
 
-    ls "cmon lori, we should let jensen clear things up with her."
+    jh "(It was 3 actually...)"
 
-    "lisa drags a reluctant lori out of the room"
+    lh "What was that?"
 
-    ah "so, about those gpu blueprints..."
+    jh "N-nothing! Anyways, I really do regret my actions, so even if you dont love me anymore..." 
+    
+    jh "I hope that we can, at the very least, part on good terms."
 
-    "hand blueprints over or not? (this action will have consequences)"
+    "Awkward silence."
 
-    "hand blueprints over"
+    lh "Sure, Jensen." 
+    
+    lh "I've known u since our university days, and I know you do dumb stuff all the time." 
+    
+    lh "Nevertheless, what you did this time was unforgivable..."
+    
+    lh "So, we cant be together again."
 
-    jh "im a man of my word. ill send them over tonight, its not like i have anything to lose"
+    jh "(nod)"
+    
+    jh "I respect your decision. Thanks, Lori."
 
-    ah "good choice. also, im sorry abt the loss of ur 33 year long position as ceo. if u want, i could pull some strings for u to be ceo of moonshot ai"
+    "Lori tears up and cries."
 
-    jh "the company that owns kimi?"
+    lh "I'm gonna miss you, Jensen. I wish you the best of luck for whatever path you choose from this point onward."
 
-    ah "thats right."
+    "You walk away, waving goodbye to your wife of 40 years."
 
-    "accept or decline? (this action will have consequences)"
+    scene nvidia hq at fullscreen_cover with fade
 
-    "accept"
+    "(Time Skip)"
 
-    jh "i accept."
+    "You managed to reclaim your position as CEO of Nvidia with the help of your loyal workers."
 
-    "(time skip)"
-    scene bg beijing
+    #"Ending 2"
 
-    "jensen huang is the new ceo of moonshot ai. he is tight with xi jinping, while his relationship with donald trump has deteriorated"
+    #"Talk to Alice"
 
-    "ending 3"
+    jh "Hey ladies, can I talk to Alice in a one-on-one?"
 
-    "decline/dont hand blueprints over"
+    lh "Y-you just fainted, and the first person you want to talk to is the DAMN CHINESE SPY?!"
 
-    ah "well, im sorry it had to end this way"
+    ls "C'mon Lori, we should let him clear things up with her."
 
-    "alice takes out a QSZ-11 from her pocket"
+    "Lisa drags a reluctant Lori out of the room."
 
-    jh "wait, wait please-"
+    ah "So, about those GPU blueprints..."
 
-    "alice pulls the trigger, screen goes black"
+    #"Should I hand the blueprints over or not? (This action will have consequences)"
 
-    "ending 4"
+    #"Hand blueprints over"
+
+    jh "I'm a man of my word. I'll send them over tonight."
+    
+    jh "It's not like I have anything to lose, anyway."
+
+    ah "Good choice."
+    
+    ah "Also, if you wish to continue being a leader in the AI industry, I could pull some strings for you to be CEO of Moonshot AI."
+
+    jh "The company that owns Kimi?"
+
+    ah "That's right."
+
+    #"Accept or Decline? (This action will have consequences)"
+
+    #"Accept"
+
+    jh "I accept."
+
+    scene beijing at fullscreen_cover with fade
+
+    "(Time skip)"
+
+    "You are the new CEO of Moonshot AI."
+    
+    "You are tight with Xi Jinping, while your relationship with Donald Trump has deteriorated."
+
+    #"Ending 3"
+
+    #"Decline/Don't hand blueprints over"
+
+    ah "Oh well. I'm sorry it had to end this way."
+
+    "Alice takes out a loaded pistol from her pocket."
+
+    jh "Wait, wait please-"
+
+    "Alice pulls the trigger."
+
+    #"Ending 4"

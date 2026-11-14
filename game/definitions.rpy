@@ -1,6 +1,6 @@
 # [ CHARACTERS ]
 
-define jh = Character("Jensen Huang", color="#52B788", image="jensen")
+define jh = Character("You", color="#52B788", image="jensen")
 define ls = Character("Lisa Su", color="#FF9F1C", image="lisa")
 define ah = Character("Alice Hoang", color="#FF595E", image="alice")
 define lh = Character("Lori Hoang", color="#4CC9F0", image="lori")
