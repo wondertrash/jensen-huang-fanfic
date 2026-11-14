@@ -15,21 +15,7 @@ with open(f"game/raw/{name}.md", "r", encoding="utf-8") as file, \
 
     for line in file:
         content = line.strip()
-        if "[CHARACTER]" in content:
-            reformat = re.split(r"(?<=\])\s*", content)
-            reformat[2] = reformat[2].replace(": ", "")
-            reformat[1] = re.sub(r"[\[\]]", "", reformat[1])
-            character = characters[reformat[1].lower()]
-            response = re.sub(r"[\[\]]", "", reformat[2])
-            outfile.write(character + f" \"{response}\"\n")
-        elif "[NARRATIVE]" in content:
-            reformat = content.replace("[NARRATIVE]: ", "")
-            reformat = re.sub(r"[\[\]]", "", reformat)
-            outfile.write(f"\"{reformat}\"\n")
-        elif "[SCENE CHANGE]" in content:
-            reformat = content.replace("[SCENE CHANGE]: ", "")
-            outfile.write(f"scene bg {reformat}\n")
-        elif re.search(r"scene [a-z ]+", content):
+        if re.search(r"scene [a-z ]+", content):
             reformat = re.sub(r"[\(\)]", "", content)
             reformat = reformat.replace("scene", "scene bg")
             outfile.write(f"{reformat}\n")
