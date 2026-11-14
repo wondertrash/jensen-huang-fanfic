@@ -59,6 +59,8 @@ label talk_to_lisa:
 
     ls "So..., are we getting back to where we left off?"
 
+    return
+
 label talk_to_lori:
     #"Talk to Lori"
 
@@ -110,6 +112,8 @@ label talk_to_lori:
 
     "You managed to reclaim your position as CEO of Nvidia with the help of your loyal workers."
 
+    return
+
 label talk_to_alice:
     #"Talk to Alice"
 
@@ -129,6 +133,8 @@ label talk_to_alice:
             call hand_over_blueprints_true
         "Don't hand blueprints over":
             call hand_over_blueprints_false 
+
+    return
 
 label hand_over_blueprints_true:
     jh "I'm a man of my word. I'll send them over tonight."
@@ -150,6 +156,7 @@ label hand_over_blueprints_true:
             call moonshot_ai_accept
         "Decline":
             call moonshot_ai_decline
+    return
 
 label hand_over_blueprints_false:
     ah "Oh well. I'm sorry it had to end this way."
@@ -159,6 +166,7 @@ label hand_over_blueprints_false:
     jh "Wait, wait please-"
 
     "Alice pulls the trigger."
+    return
 
 label moonshot_ai_accept:
     jh "I accept."
@@ -170,6 +178,8 @@ label moonshot_ai_accept:
     "You are the new CEO of Moonshot AI."
     
     "You are tight with Xi Jinping, while your relationship with Donald Trump has deteriorated."
+    return
 
 label moonshot_ai_decline:
     call hand_over_blueprints_false
+    return
