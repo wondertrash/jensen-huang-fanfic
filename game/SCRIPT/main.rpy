@@ -66,6 +66,7 @@ label beginning:
             
         "Talk to Alice":
             call talk_to_alice                
+    return
     
 
 
