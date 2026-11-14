@@ -76,7 +76,8 @@ label beginning:
 
     "jensen leans in for a kiss, lisa complies"
 
-    ffw to scene bg amd hq
+    "(time skip)"
+    scene bg amd hq
 
     jh "ahh, it feels good to make boatloads of money again!"
 
@@ -149,7 +150,8 @@ label beginning:
 
     jh "i accept."
 
-    ffw scene bg beijing
+    "(time skip)"
+    scene bg beijing
 
     "jensen huang is the new ceo of moonshot ai. he is tight with xi jinping, while his relationship with donald trump has deteriorated"
 
