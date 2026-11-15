@@ -1,4 +1,5 @@
 label talk_to_lisa:
+    play music "ost.ogg" if_changed
     "(This action will have consequences.)"
 
     jh "Hey ladies, can I talk to Lisa one-on-one for now?"
@@ -55,7 +56,7 @@ label talk_to_lisa:
     jh "See you on Monday!"
 
     scene amd hq at fullscreen_cover with fade
-
+    play music "ost1.ogg"
     "(Time Skip)"
 
     jh "Ahh, it feels so good to make boatloads of money again!"
@@ -74,7 +75,7 @@ label talk_to_lisa:
     return
 
 label talk_to_lori:
-
+    play music "ost.ogg" if_changed
     jh "Hey ladies, can I talk to my wife, er, ex-wife in a one-on-one conversation?"
 
     ls "Of course. Make sure you get well soon."
@@ -119,7 +120,7 @@ label talk_to_lori:
 
     lh "I'm gonna miss you, Jensen. I wish you the best of luck for whatever path you choose from this point onward."
 
-    "You walk away, waving goodbye to your former wife of 40 years."
+    "You walk away, ogging goodbye to your former wife of 40 years."
 
     scene nvidia hq at fullscreen_cover with fade
 
@@ -131,7 +132,7 @@ label talk_to_lori:
     return
 
 label talk_to_alice:
-
+    play music "ost.ogg" if_changed
     jh "Hey ladies, can I talk to Alice in a one-on-one?"
 
     lh "Y-you just fainted, and the first person you want to talk to is the DAMN CHINESE SPY?!"
@@ -154,6 +155,7 @@ label talk_to_alice:
     return
 
 label hand_over_blueprints_true:
+    play music "ost.ogg" if_changed
     jh "I'm a man of my word. I'll send them over tonight."
     
     jh "It's not like I have anything to lose, anyway..."
@@ -176,6 +178,7 @@ label hand_over_blueprints_true:
     return
 
 label hand_over_blueprints_false:
+    play music "ost1.ogg"
     ah "Oh well. I'm sorry it had to end this way."
 
     jh "W-what do you mean?"
@@ -192,6 +195,7 @@ label hand_over_blueprints_false:
     return
 
 label moonshot_ai_accept:
+    play music "ost1.ogg"
     jh "I accept."
 
     scene beijing at fullscreen_cover with fade
@@ -206,10 +210,12 @@ label moonshot_ai_accept:
     return
 
 label moonshot_ai_decline:
+    play music "ost1.ogg"
     call hand_over_blueprints_false from _call_hand_over_blueprints_false_1
     return
 
 label end_scene:
+    play music "ost1.ogg" if_changed
     "The End!"
     
     "Thank You for Playing!"
