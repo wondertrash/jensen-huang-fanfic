@@ -2,10 +2,10 @@
 # Jensen Huang Dating Simulator
 
 ## About
-A choose your adventure style satirical visual novel regarding the Nvidia CEO's affair(s).
+A satirical visual novel regarding the Nvidia CEO's affair(s).
 
 ## How to play
-It's a choose your adventure style novel. Click either left click or space bar to progress through, and choose an option when given the choice.
+Left click/space bar to progress through the game.
 
 ## Disclaimer
 This novel is not meant to be taken seriously.
