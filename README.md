@@ -1,11 +1,19 @@
 
 # Jensen Huang Dating Simulator
 
-A satirical visual novel regarding the Nvidia CEO's affair(s).
+## About
+A choose your adventure style satirical visual novel regarding the Nvidia CEO's affair(s).
 
-Not meant to be taken seriously.
+## How to play
+It's a choose your adventure style novel. Click either left click or space bar to progress through, and choose an option when given the choice.
+
+## Disclaimer
+This novel is not meant to be taken seriously.
 
 
-## Demo
-
+## Link
 https://wondertrash.itch.io/jensen-huang-dating-simulator
+
+## Credits
+Tariq Khalif
+Ben Xie
