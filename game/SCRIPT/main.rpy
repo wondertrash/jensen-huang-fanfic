@@ -22,7 +22,7 @@ label beginning:
 
     jh "(Drinks red potion)"
 
-    "You fall unconscious and drops to the floor."
+    "You fall unconscious and drop to the floor."
 
     "The suspicious drug dealer quickly flees the scene."
 
@@ -65,10 +65,10 @@ label beginning:
             call talk_to_lisa
 
         "Talk to Lori":
-            call talk_to_lori 
+            call talk_to_lori
             
         "Talk to Alice":
-            call talk_to_alice                
+            call talk_to_alice
     return
     
 

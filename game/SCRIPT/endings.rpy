@@ -16,7 +16,7 @@ label talk_to_lisa:
     hide alice
     hide lori
 
-    jh "So, how are ur company doing, lisa?"
+    jh "So, how are ur company doing, Lisa?"
 
     ls "Oh... it's doing fine, I suppose. Is that all you wanted to ask?"
     
@@ -36,11 +36,11 @@ label talk_to_lisa:
 
     jh "Besides... I've always admired you, Lisa."
 
-    lh "...Same, Jensen."
+    ls "...Same, Jensen."
 
-    lh "You know, I've always been jealous of Nvidia's technological advancements in ray tracing and machine learning."
+    ls "You know, I've always been jealous of Nvidia's technological advancements in ray tracing and machine learning."
 
-    lh "I know my company will profit from your affair, but still-"
+    ls "I know my company will profit from your affair, but still-"
 
     "You wrap your cool leather jacket around Lisa."
 
@@ -48,7 +48,7 @@ label talk_to_lisa:
 
     jh "Lisa... I want to be with you. I've liked you ever since I found out we were related."
 
-    jh "No one will find out about this. I've learned from my past mistakes, i swear."
+    jh "No one will find out about this. I've learned from my past mistakes, I swear."
 
     ls "Alright, I trust you."
 
@@ -85,7 +85,7 @@ label talk_to_lori:
 
     lh "You oughtta be! Do you know how sad I was knowing that MY HUSBAND OF 40 YEARS CHEATED ON ME WITH 2 OTHER WOMEN??"
 
-    jh "(It was 3 actually...)"
+    jh "It was 3 actually..."
 
     lh "What was that?"
 
@@ -142,7 +142,7 @@ label talk_to_alice:
         "Hand blueprints over":
             call hand_over_blueprints_true
         "Don't hand blueprints over":
-            call hand_over_blueprints_false 
+            call hand_over_blueprints_false
 
     call end_scene
     return
@@ -150,7 +150,7 @@ label talk_to_alice:
 label hand_over_blueprints_true:
     jh "I'm a man of my word. I'll send them over tonight."
     
-    jh "It's not like I have anything to lose, anyway."
+    jh "It's not like I have anything to lose, anyway..."
 
     ah "Good choice."
     
@@ -160,7 +160,7 @@ label hand_over_blueprints_true:
 
     ah "That's right."
 
-    "Accept or Decline? (This action will have consequences)"
+    "Accept or Decline?"
 
     menu:
         "Accept":
