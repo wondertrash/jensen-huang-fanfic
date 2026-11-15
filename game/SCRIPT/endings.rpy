@@ -178,6 +178,10 @@ label hand_over_blueprints_true:
 label hand_over_blueprints_false:
     ah "Oh well. I'm sorry it had to end this way."
 
+    jh "W-what do you mean?"
+
+    ah "You're too dangerous to be kept alive."
+
     "Alice takes out a loaded pistol from her pocket."
 
     jh "Wait, wait please-"
