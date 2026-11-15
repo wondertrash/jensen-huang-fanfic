@@ -62,13 +62,13 @@ label beginning:
 
     menu:
         "Talk to Lisa":
-            call talk_to_lisa
+            call talk_to_lisa from _call_talk_to_lisa
 
         "Talk to Lori":
-            call talk_to_lori
+            call talk_to_lori from _call_talk_to_lori
             
         "Talk to Alice":
-            call talk_to_alice
+            call talk_to_alice from _call_talk_to_alice
     return
     
 

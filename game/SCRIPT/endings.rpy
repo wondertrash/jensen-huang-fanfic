@@ -16,43 +16,43 @@ label talk_to_lisa:
     hide alice
     hide lori
 
-    jh "So, how are ur company doing, Lisa?"
-
-    ls "Oh... it's doing fine, I suppose. Is that all you wanted to ask?"
-    
-    jh "No, there was something else..."
-
-    ls "Wait, your face is still a little dirty. Let me wipe that... ahh!"
-
-    "Lisa trips on nothing and faceplants onto your tummy wummy."
-
-    ls "Woah, your abs are so... prominent. (blushes)"
-
-    jh "If you want more of this, you should hire me as AMD's vice president."
+    jh "So..., can you hire me as AMD's vice president?"
 
     ls "W-what?? You as vice president? But the Board..."
 
-    jh "It's okay, I have supporters in your company who would vote for such a decision."
+    jh "It's okay, I bribed a few underpaid software engineers in your company to vote for such a decision."
 
-    jh "Besides... I've always admired you, Lisa."
+    ls "..."
 
-    ls "...Same, Jensen."
+    ls "You know what? Fine."
 
-    ls "You know, I've always been jealous of Nvidia's technological advancements in ray tracing and machine learning."
+    ls "However, I have one condition:"
 
-    ls "I know my company will profit from your affair, but still-"
+    ls "You will serve as my personal slave, and will be subject to physical violence at will."
 
-    "You wrap your cool leather jacket around Lisa."
+    jh "...Say what now?"
 
-    ls "W-what is this?"
+    ls "These labour laws prevent me from beating up my lazy employees!"
 
-    jh "Lisa... I want to be with you. I've liked you ever since I found out we were related."
+    ls "Isn't that ridiculous?!"
 
-    jh "No one will find out about this. I've learned from my past mistakes, I swear."
+    ls "You need a job, and I need someone to take my anger out on."
 
-    ls "Alright, I trust you."
+    ls "So, do we have a deal?"
 
-    "You lean in for a kiss. Lisa does as well."
+    jh "..."
+
+    jh "Well, Lori used to beat me up back in the day and I kinda liked it..."
+
+    ls "..."
+
+    ls "I'm sorry, what did you just-"
+
+    jh "I accept."
+
+    "You shake your flabbergasted cousin's limp hand."
+
+    jh "See you on Monday!"
 
     scene amd hq at fullscreen_cover with fade
 
@@ -60,9 +60,17 @@ label talk_to_lisa:
 
     jh "Ahh, it feels so good to make boatloads of money again!"
 
-    ls "So..., are we getting back to where we left off?"
+    jh "Glory to nepotism!"
 
-    call end_scene
+    ls "Yeah, yeah. Now get back to work, you womanizer!"
+
+    "Lisa proceeds to stomp on your foot."
+
+    jh "OW!"
+
+    "(You try to contain your excitement. She mustn't know you enjoy this.)"
+
+    call end_scene from _call_end_scene
     return
 
 label talk_to_lori:
@@ -119,7 +127,7 @@ label talk_to_lori:
 
     "You managed to reclaim your position as CEO of Nvidia with the help of your loyal workers."
 
-    call end_scene
+    call end_scene from _call_end_scene_1
     return
 
 label talk_to_alice:
@@ -140,11 +148,9 @@ label talk_to_alice:
     "Should I hand the blueprints over or not? (This action will have consequences)"
     menu:
         "Hand blueprints over":
-            call hand_over_blueprints_true
+            call hand_over_blueprints_true from _call_hand_over_blueprints_true
         "Don't hand blueprints over":
-            call hand_over_blueprints_false
-
-    call end_scene
+            call hand_over_blueprints_false from _call_hand_over_blueprints_false
     return
 
 label hand_over_blueprints_true:
@@ -164,9 +170,9 @@ label hand_over_blueprints_true:
 
     menu:
         "Accept":
-            call moonshot_ai_accept
+            call moonshot_ai_accept from _call_moonshot_ai_accept
         "Decline":
-            call moonshot_ai_decline
+            call moonshot_ai_decline from _call_moonshot_ai_decline
     return
 
 label hand_over_blueprints_false:
@@ -178,7 +184,7 @@ label hand_over_blueprints_false:
 
     "Alice pulls the trigger."
 
-    call end_scene
+    call end_scene from _call_end_scene_2
     return
 
 label moonshot_ai_accept:
@@ -192,11 +198,11 @@ label moonshot_ai_accept:
     
     "You are tight with Xi Jinping, while your relationship with Donald Trump has deteriorated."
     
-    call end_scene
+    call end_scene from _call_end_scene_3
     return
 
 label moonshot_ai_decline:
-    call hand_over_blueprints_false
+    call hand_over_blueprints_false from _call_hand_over_blueprints_false_1
     return
 
 label end_scene:
