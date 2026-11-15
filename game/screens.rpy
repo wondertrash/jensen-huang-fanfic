@@ -355,7 +355,7 @@ screen main_menu():
     ## This ensures that any other menu screen is replaced.
     tag menu
 
-    add gui.main_menu_background
+    add gui.main_menu_background at fullscreen_cover
 
     ## This empty frame darkens the main menu.
     frame:
@@ -420,7 +420,7 @@ screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
     style_prefix "game_menu"
 
     if main_menu:
-        add gui.main_menu_background
+        add gui.main_menu_background at fullscreen_cover
     else:
         add gui.game_menu_background
 
