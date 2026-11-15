@@ -10,10 +10,11 @@ It's a choose your adventure style novel. Click either left click or space bar t
 ## Disclaimer
 This novel is not meant to be taken seriously.
 
-
 ## Link
 https://wondertrash.itch.io/jensen-huang-dating-simulator
 
 ## Credits
-Tariq Khalif
-Ben Xie
+
+**Developers:**
+- Tariq Khalif
+- Ben Xie
