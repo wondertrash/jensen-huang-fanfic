@@ -145,7 +145,7 @@ label talk_to_alice:
 
     ah "So, about those GPU blueprints..."
 
-    "Should I hand the blueprints over or not? (This action will have consequences)"
+    "Should I hand the blueprints over?"
     menu:
         "Hand blueprints over":
             call hand_over_blueprints_true from _call_hand_over_blueprints_true
