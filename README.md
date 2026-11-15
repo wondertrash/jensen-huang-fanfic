@@ -17,4 +17,4 @@ https://wondertrash.itch.io/jensen-huang-dating-simulator
 
 **Developers:**
 - Tariq Khalif
-- Ben Xie
+- Benjamin Xie
