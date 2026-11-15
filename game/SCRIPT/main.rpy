@@ -1,5 +1,6 @@
 label beginning:
     scene dark alley at fullscreen_cover with fade
+    play music "ost.ogg"
     show jensen at center with dissolve
 
     "You have recently been divorced by your wife and kicked out of your mansion."
@@ -29,6 +30,8 @@ label beginning:
     hide dd
 
     scene hospital at fullscreen_cover with fade
+
+    play music "ost.ogg" if_changed
 
     "You wakes up in a delirious state."
 
